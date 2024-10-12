@@ -1,0 +1,13 @@
+services:
+  - type: web
+    name: footballverse-api
+    env: node
+    buildCommand: npm install
+    startCommand: node index.js
+    envVars:
+      - key: MONGODB_URI
+        value: mongodb+srv://clusterone.amlvm.mongodb.net/
+      - key: MONGODB_USERNAME
+        value: kaverigaddam
+      - key: MONGODB_PASSWORD
+        value: A6OeC9huDwQuD9sU
