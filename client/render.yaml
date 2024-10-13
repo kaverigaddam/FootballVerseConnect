@@ -1,0 +1,9 @@
+services:
+  - type: web
+    name: footballverse-client
+    env: static
+    buildCommand: npm run build
+    staticPublishPath: ./build
+    envVars:
+      - key: REACT_APP_API_URL
+        value: https://footballverse-api.onrender.com
